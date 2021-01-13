@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <RelativeLayout style="@style/ScoreText">
+
+        <ImageButton
+            android:id="@+id/increaseteam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            style="@style/PlusButtons"
+
+
+            android:layout_marginTop="149dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+
+            android:onClick="increaseteam1"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/team_1"
+            style="@style/TeamText"
+            />
+<TextView
+    android:id="@+id/score1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="@string/_0"
+    style="@style/ScoreText"
+
+
+/>
+
+        <ImageButton
+            android:id="@+id/decreaseteam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            style="@style/MinusButtons"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="149dp"
+
+            android:onClick="decreaseteam1"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/team_2"
+            style="@style/TeamText"
+            />
+
+        <ImageButton
+            android:id="@+id/increaseteam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            style="@style/PlusButtons"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="145dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+
+            android:onClick="increaseteam2"
+             />
+
+        <TextView
+            android:id="@+id/score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/_0"
+            style="@style/ScoreText"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/decreaseteam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="@style/MinusButtons"
+
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="145dp"
+
+            android:onClick="decreaseteam2"
+             />
+    </RelativeLayout>
+
+
+</LinearLayout>
